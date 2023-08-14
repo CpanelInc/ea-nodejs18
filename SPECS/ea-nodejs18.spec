@@ -14,7 +14,6 @@ Provides: ea4-nodejs
 Conflicts: ea4-nodejs
 # Because old ea-nodejs10 does not have ^^^ and DNF wants to solve ^^^ by downgrading ea-nodejs10
 Conflicts: ea-nodejs10
-Conflicts: ea-nodejs16
 
 %description
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.

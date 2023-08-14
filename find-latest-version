@@ -35,7 +35,7 @@ sub _get_required {
         die "Could not find nodejs versions\n";
     }
 
-    my $version = "18\.$nodejs[0]";
+    my $version = "18.$nodejs[0]";
     my $name    = "node-v$version-linux-x64.tar.gz";
     my $url     = "https://nodejs.org/dist/v$version/$name";
 
