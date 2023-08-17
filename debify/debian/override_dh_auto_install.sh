@@ -16,3 +16,6 @@ do
 done
 mkdir -p $DEB_INSTALL_ROOT/etc/cpanel/ea4
 echo -n /opt/cpanel/ea-nodejs18/bin/node > $DEB_INSTALL_ROOT/etc/cpanel/ea4/passenger.nodejs
+
+# changes symlink targets so will get the symlinks to ../…/*.js
+chmod 755 $DEB_INSTALL_ROOT/opt/cpanel/ea-nodejs18/bin/*
