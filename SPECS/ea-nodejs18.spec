@@ -71,6 +71,10 @@ echo -n /opt/cpanel/ea-nodejs18/bin/node > %{buildroot}/etc/cpanel/ea4/passenger
 %changelog
 * Wed Feb 14 2024 Cory McIntire <cory@cpanel.net> - 18.19.1-1
 - EA-11974: Update ea-nodejs18 from v18.19.0 to v18.19.1
+- CVE-2024-21892 - Code injection and privilege escalation through Linux capabilities- (High)
+- CVE-2024-22019 - http: Reading unprocessed HTTP request with unbounded chunk extension allows DoS attacks- (High)
+- CVE-2023-46809 - Node.js is vulnerable to the Marvin Attack (timing variant of the Bleichenbacher attack against PKCS#1 v1.5 padding) - (Medium)
+- CVE-2024-22025 - Denial of Service by resource exhaustion in fetch() brotli decoding - (Medium)
 
 * Thu Nov 30 2023 Cory McIntire <cory@cpanel.net> - 18.19.0-1
 - EA-11839: Update ea-nodejs18 from v18.18.2 to v18.19.0
