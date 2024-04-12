@@ -71,6 +71,7 @@ echo -n /opt/cpanel/ea-nodejs18/bin/node > %{buildroot}/etc/cpanel/ea4/passenger
 %changelog
 * Wed Apr 10 2024 Cory McIntire <cory@cpanel.net> - 18.20.2-1
 - EA-12082: Update ea-nodejs18 from v18.20.1 to v18.20.2
+- Command injection via args parameter of child_process.spawn without shell option enabled on Windows (CVE-2024-27980) - (HIGH)
 
 * Wed Apr 03 2024 Cory McIntire <cory@cpanel.net> - 18.20.1-1
 - EA-12067: Update ea-nodejs18 from v18.20.0 to v18.20.1
