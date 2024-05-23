@@ -1,7 +1,7 @@
 Name:    ea-nodejs18
 Vendor:  cPanel, Inc.
 Summary: Node.js 18
-Version: 18.20.2
+Version: 18.20.3
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4572 for more details
 %define release_prefix 1
 Release: %{release_prefix}%{?dist}.cpanel
@@ -69,6 +69,9 @@ echo -n /opt/cpanel/ea-nodejs18/bin/node > %{buildroot}/etc/cpanel/ea4/passenger
 
 
 %changelog
+* Tue May 21 2024 Cory McIntire <cory@cpanel.net> - 18.20.3-1
+- EA-12166: Update ea-nodejs18 from v18.20.2 to v18.20.3
+
 * Wed Apr 10 2024 Cory McIntire <cory@cpanel.net> - 18.20.2-1
 - EA-12082: Update ea-nodejs18 from v18.20.1 to v18.20.2
 - Command injection via args parameter of child_process.spawn without shell option enabled on Windows (CVE-2024-27980) - (HIGH)
