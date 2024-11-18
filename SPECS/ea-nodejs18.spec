@@ -1,7 +1,7 @@
 Name:    ea-nodejs18
 Vendor:  cPanel, Inc.
 Summary: Node.js 18
-Version: 18.20.4
+Version: 18.20.5
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4572 for more details
 %define release_prefix 1
 Release: %{release_prefix}%{?dist}.cpanel
@@ -69,6 +69,9 @@ echo -n /opt/cpanel/ea-nodejs18/bin/node > %{buildroot}/etc/cpanel/ea4/passenger
 
 
 %changelog
+* Fri Nov 15 2024 Cory McIntire <cory@cpanel.net> - 18.20.5-1
+- EA-12552: Update ea-nodejs18 from v18.20.4 to v18.20.5
+
 * Tue Jul 09 2024 Cory McIntire <cory@cpanel.net> - 18.20.4-1
 - EA-12274: Update ea-nodejs18 from v18.20.3 to v18.20.4
 	- CVE-2024-36138 - Bypass incomplete fix of CVE-2024-27980 (High)
