@@ -71,6 +71,8 @@ echo -n /opt/cpanel/ea-nodejs18/bin/node > %{buildroot}/etc/cpanel/ea4/passenger
 %changelog
 * Tue Jan 21 2025 Cory McIntire <cory@cpanel.net> - 18.20.6-1
 - EA-12662: Update ea-nodejs18 from v18.20.5 to v18.20.6
+	- GOAWAY HTTP/2 frames cause memory leak outside heap (CVE-2025-23085) - (medium)
+	- Path traversal by drive name in Windows environment (CVE-2025-23084) - (medium)
 
 * Fri Nov 15 2024 Cory McIntire <cory@cpanel.net> - 18.20.5-1
 - EA-12552: Update ea-nodejs18 from v18.20.4 to v18.20.5
